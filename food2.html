@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Corner | Lifestyle Blog</title>
+    <style>
+        /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-image: url('https://img.freepik.com/free-photo/tasty-pizza-near-ingredients_23-2147772080.jpg');
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #333;
+    border-radius: 5px;
+    color: #ff7043;
+}
+
+/* Main Content */
+main {
+    padding: 4rem 20px;
+    background-color: #fff;
+}
+
+section {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: #ff7043;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #47281e;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.image-placeholder {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.image-placeholder img {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Background and Section Colors */
+.intro-section {
+    background-image: url('https://blog.swiggy.com/wp-content/uploads/2024/02/Hyderabadi-Biryani-1024x538.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 20px;
+    color: white;
+}
+
+.intro-section h2, .content-section h2 {
+    color: #fff;
+}
+
+.content-section:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+
+.contact-section {
+    background-color: #ffccbc;
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.contact-section button {
+    padding: 1rem;
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Food Corner</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#lifestyle">Lifestyle Tips</a></li>
+                <li><a href="#food">Food & Health</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="intro-section">
+            <h2>Welcome to Food Corner 🍽️</h2>
+            <p>Food isn’t just about eating; it’s about living. At Food Corner, we believe that every meal is an opportunity to improve your lifestyle, boost your health, and create moments of joy. Whether you’re interested in healthy eating, delicious recipes, or the role of food in holistic living, you’ll find all that and more here.</p>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/1200x600/ff7043/fff?text=Delicious+Food" alt="Food in Lifestyle" />
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Food Corner</h2>
+            <p>Food Corner was created to inspire and empower people to take charge of their health and wellness through the food they eat. We aim to provide high-quality, easy-to-follow recipes, practical lifestyle tips, and guidance on building a balanced approach to food that suits your unique needs.</p>
+            <p>Our philosophy is simple: Food should be nourishing, flavorful, and a joy to prepare. Here at Food Corner, we blend creativity with nutrition, offering everything from indulgent comfort foods to vibrant, nutrient-dense dishes that you can enjoy without guilt.</p>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/1200x600/4caf50/fff?text=Healthy+Eating" alt="Healthy Eating" />
+            </div>
+        </section>
+
+        <section id="lifestyle" class="content-section">
+            <h2>Lifestyle Tips for a Healthier You</h2>
+            <p>Living a balanced life means more than just what you eat—it’s about how you live and how you care for yourself. From the foods you choose to the way you approach meal planning, self-care, and mindfulness, it’s all interconnected.</p>
+            <h3>Mindful Eating</h3>
+            <p>Start paying attention to how you feel before, during, and after you eat. Try not to eat while distracted—whether by your phone, TV, or work. Take a moment to appreciate the food in front of you. This not only improves digestion but helps you tune in to your body’s needs.</p>
+
+            <h3>Meal Planning & Prep</h3>
+            <p>Meal prepping is a lifesaver. It helps you stay on track with healthy eating even on the busiest days. Whether it’s prepping your veggies or cooking in batches, the key is to make sure you always have nourishing options available.</p>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/1200x600/00bcd4/fff?text=Meal+Planning" alt="Meal Prep and Planning" />
+            </div>
+        </section>
+
+        <section id="food" class="content-section">
+            <h2>Food & Health: Nourishing Your Body & Mind</h2>
+            <p>Food is the fuel for your body and your mind. What you eat impacts your energy, mood, mental clarity, and overall health. The key is balance—incorporating nutrient-dense foods that not only support physical health but mental wellness as well.</p>
+            
+            <h3>Anti-Inflammatory Diet</h3>
+            <p>Incorporating anti-inflammatory foods, like berries, turmeric, and leafy greens, can help reduce inflammation, promote overall health, and protect against chronic diseases. Small adjustments like these can have profound effects on your long-term wellness.</p>
+
+            <h3>Boosting Gut Health</h3>
+            <p>Your gut health is critical to your overall well-being. Fermented foods like kimchi, sauerkraut, and kombucha support your gut microbiome, helping with digestion, immunity, and even mental health. A healthy gut leads to a healthier body and mind.</p>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/1200x600/9c27b0/fff?text=Gut+Health" alt="Gut Health Foods" />
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have a question, a recipe request, or just want to share your own food journey, feel free to reach out to us. Connect with us on social media or drop us a message below:</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Corner | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

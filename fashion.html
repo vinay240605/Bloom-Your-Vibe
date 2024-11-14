@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifestyle Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Global Styles */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .main {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1rem;
+      background: linear-gradient(to right, #fbcfe8, #c6a0ff);
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-3xl {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #111827;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #ff7d9f, #ff58a0);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .text-xl {
+      font-size: 1.125rem;
+      color: #4b5563;
+      line-height: 1.8;
+    }
+
+    .font-bold {
+      font-weight: bold;
+    }
+
+    .text-gray-900 {
+      color: #111827;
+    }
+
+    .text-gray-600 {
+      color: #4b5563;
+    }
+
+    .text-gray-500 {
+      color: #6b7280;
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .rounded-xl {
+      border-radius: 1rem;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .shadow-sm {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .hover\:shadow-md:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .transition-shadow {
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .md\:flex {
+      display: flex;
+    }
+
+    .md\:w-2\/5 {
+      width: 40%;
+    }
+
+    .md\:w-3\/5 {
+      width: 60%;
+    }
+
+    .img-fit {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .img-fit:hover {
+      transform: scale(1.05);
+      filter: brightness(90%);
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      color: #1f2937;
+      text-transform: capitalize;
+      transition: color 0.3s ease;
+    }
+
+    h3:hover {
+      color: #ec4899;
+    }
+
+    a {
+      font-size: 1rem;
+      color: #d946ef;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #d946ef;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+    .categories {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .category-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .category-item:hover {
+      transform: translateY(-5px);
+      background-color: #f0f4f8;
+    }
+
+    .category-item .icon {
+      font-size: 1.5rem;
+    }
+
+    .category-item .name {
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .category-item:hover .name {
+      color: #ec4899;
+    }
+
+    @media (max-width: 768px) {
+      .text-3xl {
+        font-size: 1.5rem;
+      }
+
+      .text-xl {
+        font-size: 1rem;
+      }
+
+      .img-fit {
+        height: 200px;
+        border-radius: 1rem;
+      }
+
+      .main {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text-3xl {
+        font-size: 1.25rem;
+      }
+
+      .text-xl {
+        font-size: 0.875rem;
+      }
+
+      .img-fit {
+        height: 180px;
+      }
+
+      .main {
+        padding: 1rem;
+      }
+
+      .category-item {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+      }
+    }
+  </style>
+<body>
+    <div class="main">
+        <div class="text-center">
+          <h1 class="text-3xl">Modern Lifestyle</h1>
+          <p class="text-xl">Discover tips and inspiration for living a balanced, fulfilling life in today's fast-paced world.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2">
+            <div class="space-y-12">
+              <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div class="md:flex">
+                  <div class="md:w-2/5">
+                    <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&q=80" alt="Creating a Minimalist Home" class="img-fit" />
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <div class="flex items-center gap-2 mb-4">
+                      <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Home & Living</span>
+                      <time class="text-sm text-gray-500">April 15, 2024</time>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Creating a Minimalist Home</h3>
+                    <p class="text-gray-600 mb-6">Transform your living space with minimalist design principles for a calmer, more organized life.</p>
+                    <a href="creating-a-minimalist-home.html" class="text-rose-600 hover:text-rose-700 font-medium">Read More →</a>
+                  </div>
+                </div>
+              </article>
+              <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div class="md:flex">
+                  <div class="md:w-2/5">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80" alt="Digital Detox Guide" class="img-fit" />
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <div class="flex items-center gap-2 mb-4">
+                      <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Mental Health</span>
+                      <time class="text-sm text-gray-500">April 14, 2024</time>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Digital Detox Guide</h3>
+                    <p class="text-gray-600 mb-6">Discover how to maintain a healthy relationship with technology in the digital age.</p>
+                    <a href="digital-detox-guide.html" class="text-rose-600 hover:text-rose-700 font-medium">Read More →</a>
+                  </div>
+                </div>
+              </article>
+              <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div class="md:flex">
+                  <div class="md:w-2/5">
+                    <img src="https://post.healthline.com/wp-content/uploads/2021/11/oatmeal-bowl-1296x728-header-1296x729.jpg" alt="Essential Wellness Tips" class="img-fit" />
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <div class="flex items-center gap-2 mb-4">
+                      <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Wellness</span>
+                      <time class="text-sm text-gray-500">April 13, 2024</time>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">healthy-eating-for-busy-people</h3>
+                    <p class="text-gray-600 mb-6">Embrace these simple yet effective wellness habits for a more balanced and energetic lifestyle.</p>
+                    <a href="healthy-eating-for-busy-people.html" class="text-rose-600 hover:text-rose-700 font-medium">Read More →</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Clothing, Dressing, Fashion -->
+          <div class="space-y-12">
+            <h2 class="text-3xl font-bold text-gray-900">Clothing & Fashion</h2>
+            <div class="categories">
+              <div class="category-item">
+                <div class="icon">
+                  <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="name">Trendy Clothing</div>
+                <a href="trendy clothing.html">Shop Now</a>
+              </div>
+              <div class="category-item">
+                <div class="icon">
+                  <i class="fas fa-shoe-prints"></i>
+                </div>
+                <div class="name">Footwear Essentials</div>
+                <a href="footwear.html">Shop Now</a>
+              </div>
+              <div class="category-item">
+                <div class="icon">
+                  <i class="fas fa-socks"></i>
+                </div>
+                <div class="name">Accessories & Socks</div>
+                <a href="socks.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

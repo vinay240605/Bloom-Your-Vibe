@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Your Vibe - Food Blog</title>
+   <style>
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff6b6b;
+}
+
+/* Main Styling */
+main {
+    padding: 20px;
+}
+
+.featured-recipes {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.recipe {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.info h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.category {
+    background-color: #eaeaea;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.view-recipe-btn {
+    margin-top: 10px;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-recipe-btn:hover {
+    background-color: #333;
+}
+
+/* Recipe Details Section */
+.recipe-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-details h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+}
+
+.recipe-details h3 {
+    font-size: 1.4em;
+    color: #ff6b6b;
+    margin-top: 20px;
+}
+
+.recipe-details ul, .recipe-details ol {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+   </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Bloom Your Vibe - Food Blog</h1>
+        <p>Discover delicious recipes and cooking tips to inspire your kitchen creations!</p>
+    </header>
+
+    <!-- Navigation with link back to the index page -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a>
+        <a href="lifestyle.html">Lifestyle</a>
+        <a href="travel.html">Travel</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured Recipes Section -->
+        <section class="featured-recipes">
+            <div class="recipe">
+                <img src="pasta.jpg" alt="Creamy Pasta">
+                <div class="info">
+                    <h3>Creamy Garlic Pasta</h3>
+                    <div class="details">
+                        <span class="category">Italian</span>
+                        <span class="time">30 mins</span>
+                    </div>
+                    <p>A creamy, savory pasta dish perfect for a quick weeknight dinner.</p>
+                    <button class="view-recipe-btn">View Recipe</button>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="salad.jpg" alt="Fresh Garden Salad">
+                <div class="info">
+                    <h3>Fresh Garden Salad</h3>
+                    <div class="details">
+                        <span class="category">Healthy</span>
+                        <span class="time">15 mins</span>
+                    </div>
+                    <p>Crunchy, vibrant, and packed with nutrients – ideal for any meal.</p>
+                    <button class="view-recipe-btn">View Recipe</button>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="pancakes.jpg" alt="Fluffy Pancakes">
+                <div class="info">
+                    <h3>Fluffy Pancakes</h3>
+                    <div class="details">
+                        <span class="category">Breakfast</span>
+                        <span class="time">20 mins</span>
+                    </div>
+                    <p>Perfectly fluffy pancakes that are a favorite for weekend mornings.</p>
+                    <button class="view-recipe-btn">View Recipe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Instructions Section -->
+        <section class="recipe-details">
+            <h2>Creamy Garlic Pasta Recipe</h2>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g pasta of choice</li>
+                <li>1 cup heavy cream</li>
+                <li>1/4 cup Parmesan cheese, grated</li>
+                <li>3 garlic cloves, minced</li>
+                <li>2 tbsp olive oil</li>
+                <li>Salt and pepper to taste</li>
+                <li>Chopped parsley for garnish</li>
+            </ul>
+
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook the pasta according to package instructions until al dente. Drain and set aside.</li>
+                <li>In a large skillet, heat the olive oil over medium heat and add the minced garlic. Sauté for 1-2 minutes until fragrant.</li>
+                <li>Reduce heat to low, add the heavy cream and Parmesan cheese, stirring constantly until the sauce thickens.</li>
+                <li>Add the cooked pasta to the skillet and toss to coat with the creamy sauce.</li>
+                <li>Season with salt and pepper. Garnish with chopped parsley and extra Parmesan if desired.</li>
+                <li>Serve immediately and enjoy your creamy garlic pasta!</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bloom Your Vibe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
